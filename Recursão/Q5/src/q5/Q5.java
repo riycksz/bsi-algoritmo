@@ -4,12 +4,12 @@ import javax.swing.JOptionPane;
 
 public class Q5 {
 
-    public static int impares(int n) {
+    public static int pares(int n) {
         
         if (n==0)
             return 0;
         
-        return n + impares(n-2);
+        return n + pares(n-2);
         
     }
     
@@ -17,7 +17,7 @@ public class Q5 {
     
     int n1=6;
             
-        JOptionPane.showMessageDialog(null,"Soma dos três primeiros números pares: " + Q5.impares(n1));
+        JOptionPane.showMessageDialog(null,"Soma dos três primeiros números pares: " + Q5.pares(n1));
     
     
     }
